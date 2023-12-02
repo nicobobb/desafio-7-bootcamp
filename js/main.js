@@ -7,8 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const button = document.getElementsByTagName("button");
   const allLi = document.getElementsByTagName("li");
 
-  console.log(allLi);
-
   function agregarTexto(n) {
     for (let i = 0; i < n; i++) {
       destino.innerHTML += textArea.value;
