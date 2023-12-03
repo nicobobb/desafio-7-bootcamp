@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   inputs[0].addEventListener("click", function () {
     destino.innerHTML = textArea.value;
+    textArea.value = "";
   });
 
   inputs[1].addEventListener("click", function () {
