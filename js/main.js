@@ -41,8 +41,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   inputs[4].addEventListener("click", function () {
-    const n = prompt("¿Cuántas veces querés repetir el texto?");
-    agregarTexto(n);
+    let n = prompt("¿Cuántas veces querés repetir el texto?");
+    n = parseInt(n);
+    if (isNaN(n) || n < 1) {
+      alert("No ingresaste un número válido.");
+    } else {
+      agregarTexto(n);
+    }
   });
 
   inputs[5].addEventListener("click", function () {
