@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Botón de Reemplazar
   inputs[0].addEventListener("click", function () {
     destino.innerHTML = textArea.value;
-    textArea.value = "";
   });
 
   // Botón de Agregar
